@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hakolli Gartenbau – Referenzprojekte. Pool- und Wellnessanlagen, Pflasterarbeiten, Naturstein, Treppen und Gartenanlagen in höchster Qualität.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hakolli.de/projekte.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Hakolli Gartenbau">
+<meta property="og:title" content="Projekte – Hakolli Gartenbau">
+<meta property="og:description" content="Referenzprojekte von Hakolli Gartenbau: Poolanlagen, Pflasterarbeiten, Naturstein, Treppen und Außenanlagen.">
+<meta property="og:url" content="https://hakolli.de/projekte.html">
+<meta property="og:image" content="https://hakolli.de/WhatsApp%20Image%202026-05-15%20at%2022.05.4798.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<title>Projekte – Hakolli Gartenbau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green:       #3a8c1a;
+    --green-dark:  #2a6612;
+    --green-light: #4fa822;
+    --green-pale:  #eaf4e4;
+    --black:       #071c03;
+    --anthrazit:   #0d2d07;
+    --off-white:   #f2f9ee;
+    --white:       #ffffff;
+    --text-body:   #1e3a14;
+    --text-muted:  #4a6a3a;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body:    'DM Sans', sans-serif;
+    --nav-h: 80px;
+  }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body { font-family: var(--font-body); color: var(--text-body); background: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--anthrazit); }
+  ::-webkit-scrollbar-thumb { background: var(--green); border-radius: 2px; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: var(--nav-h);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw;
+    background: rgba(13,45,7,0.96);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-logo img { height: 44px; width: auto; background: white; padding: 4px 8px; border-radius: 4px; }
+  .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+  .nav-links a {
+    font-size: 0.8rem; font-weight: 400; letter-spacing: 0.12em;
+    text-transform: uppercase; color: rgba(255,255,255,0.75);
+    text-decoration: none; transition: color 0.25s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--white); }
+  .nav-cta {
+    background: var(--green) !important; color: var(--white) !important;
+    padding: 10px 22px; border-radius: 2px; letter-spacing: 0.1em !important;
+    transition: background 0.25s !important;
+  }
+  .nav-cta:hover { background: var(--green-dark) !important; }
+  .nav-burger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+  .nav-burger span { display: block; width: 24px; height: 1.5px; background: white; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; height: 60vh; min-height: 480px;
+    display: flex; align-items: flex-end; padding: 0 5vw 9vh;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('WhatsApp%20Image%202026-05-15%20at%2022.05.4798.jpeg');
+    background-size: cover; background-position: center 40%;
+  }
+  .hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(160deg, rgba(7,28,3,0.55) 0%, rgba(7,28,3,0.2) 50%, rgba(7,28,3,0.7) 100%);
+  }
+  .hero-content { position: relative; z-index: 2; }
+  .breadcrumb {
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(255,255,255,0.45); margin-bottom: 16px;
+  }
+  .breadcrumb a { color: var(--green-light); text-decoration: none; }
+  .breadcrumb a:hover { color: white; }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 5vw, 4.4rem);
+    font-weight: 300; line-height: 1.1; color: var(--white);
+    letter-spacing: -0.01em;
+  }
+  .hero-title em { font-style: italic; }
+  .hero-subtitle {
+    font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.55);
+    margin-top: 16px; line-height: 1.7;
+  }
+  .green-strip { height: 4px; background: linear-gradient(90deg, var(--green-dark), var(--green-light), var(--green-dark)); }
+
+  /* ── FILTER ── */
+  .filter-bar {
+    background: var(--white); position: sticky; top: var(--nav-h); z-index: 50;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  }
+  .filter-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 5vw;
+    display: flex; align-items: center; gap: 0;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filter-inner::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    flex-shrink: 0;
+    font-family: var(--font-body); font-size: 0.75rem;
+    font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); background: none; border: none;
+    padding: 20px 24px; cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .filter-btn:hover { color: var(--green); }
+  .filter-btn.active { color: var(--green); border-bottom-color: var(--green); font-weight: 500; }
+  .filter-count {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--green-pale); color: var(--green);
+    font-size: 0.62rem; font-weight: 500; margin-left: 6px;
+  }
+
+  /* ── GALLERY ── */
+  .gallery-section { padding: 64px 0 100px; background: var(--off-white); }
+  .gallery-inner { max-width: 1240px; margin: 0 auto; padding: 0 4vw; }
+
+  .count-bar {
+    font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 36px;
+    padding-bottom: 20px; border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .count-bar span { color: var(--green); font-weight: 500; }
+
+  /* Duo row – two items side by side at top */
+  .masonry-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .masonry-duo .masonry-item {
+    height: 380px; margin-bottom: 0;
+  }
+  .masonry-duo .masonry-item img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    .masonry-duo { grid-template-columns: 1fr; }
+    .masonry-duo .masonry-item { height: 260px; }
+  }
+
+  /* Masonry grid */
+  .masonry {
+    columns: 3; column-gap: 12px;
+  }
+  .masonry-item {
+    break-inside: avoid; margin-bottom: 12px;
+    position: relative; overflow: hidden; border-radius: 3px;
+    cursor: pointer; display: block;
+  }
+  .masonry-item img {
+    width: 100%; display: block;
+    transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .masonry-item:hover img { transform: scale(1.04); }
+  .masonry-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(7,28,3,0.78) 0%, rgba(7,28,3,0.1) 45%, transparent 65%);
+    opacity: 0; transition: opacity 0.35s;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 20px;
+  }
+  .masonry-item:hover .masonry-overlay { opacity: 1; }
+  .overlay-cat {
+    font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--green-light); margin-bottom: 5px;
+  }
+  .overlay-title {
+    font-family: var(--font-display); font-size: 1.1rem;
+    font-weight: 300; font-style: italic; color: white; line-height: 1.3;
+  }
+  .overlay-zoom {
+    position: absolute; top: 16px; right: 16px;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(255,255,255,0.15); backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.25);
+    display: flex; align-items: center; justify-content: center;
+    color: white; opacity: 0; transition: opacity 0.3s;
+  }
+  .masonry-item:hover .overlay-zoom { opacity: 1; }
+  .overlay-zoom svg { width: 14px; height: 14px; }
+
+  /* hidden items */
+  .masonry-item[data-hidden="true"] { display: none; }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 300;
+    background: rgba(0,0,0,0.96);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none; transition: opacity 0.3s;
+  }
+  .lightbox.open { opacity: 1; pointer-events: all; }
+  .lightbox-img-wrap { position: relative; max-width: 90vw; max-height: 88vh; }
+  .lightbox img { display: block; max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 2px; }
+  .lightbox-caption {
+    position: absolute; bottom: -40px; left: 0; right: 0; text-align: center;
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 24px;
+    color: rgba(255,255,255,0.6); font-size: 1.8rem;
+    cursor: pointer; background: none; border: none;
+    transition: color 0.2s; line-height: 1;
+  }
+  .lightbox-close:hover { color: white; }
+  .lightbox-nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%; width: 44px; height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    color: white; cursor: pointer;
+    transition: background 0.2s; backdrop-filter: blur(4px);
+  }
+  .lightbox-nav:hover { background: rgba(58,140,26,0.3); }
+  .lightbox-nav svg { width: 18px; height: 18px; }
+  .lb-prev { left: -60px; }
+  .lb-next { right: -60px; }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    background: var(--anthrazit); padding: 80px 5vw; text-align: center;
+  }
+  .cta-section .tag {
+    font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--green-light); margin-bottom: 16px; display: block;
+  }
+  .cta-section h2 {
+    font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300; color: white; margin-bottom: 20px;
+  }
+  .cta-section h2 em { font-style: italic; }
+  .cta-section p {
+    font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.5);
+    max-width: 500px; margin: 0 auto 40px; line-height: 1.8;
+  }
+  .btn-primary {
+    display: inline-block; background: var(--green); color: white;
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; text-decoration: none;
+    padding: 16px 40px; border-radius: 2px;
+    transition: background 0.25s, transform 0.2s;
+  }
+  .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+  .btn-ghost {
+    display: inline-block; background: transparent;
+    border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.7);
+    font-size: 0.8rem; font-weight: 400; letter-spacing: 0.12em;
+    text-transform: uppercase; text-decoration: none;
+    padding: 15px 36px; border-radius: 2px; margin-left: 16px;
+    transition: border-color 0.25s, color 0.25s;
+  }
+  .btn-ghost:hover { border-color: rgba(255,255,255,0.5); color: white; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--black); padding: 40px 5vw; }
+  .footer-bottom {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+  }
+  .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.2); }
+  .footer-logo img { height: 32px; background: white; padding: 3px 6px; border-radius: 3px; }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.2); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.5); }
+
+  /* ── MOBILE MENU ── */
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 99;
+    background: rgba(13,45,7,0.98); backdrop-filter: blur(20px);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 40px;
+    opacity: 0; pointer-events: none; transition: opacity 0.3s;
+  }
+  .mobile-menu.open { opacity: 1; pointer-events: all; }
+  .mobile-menu a {
+    font-family: var(--font-display); font-size: 2.2rem;
+    font-weight: 300; font-style: italic;
+    color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--green-light); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .masonry { columns: 2; }
+    .lb-prev { left: -48px; }
+    .lb-next { right: -48px; }
+  }
+  @media (max-width: 768px) {
+    :root { --nav-h: 64px; }
+    .nav-links { display: none; }
+    .nav-burger { display: flex; }
+    .masonry { columns: 1; }
+    .hero { height: 50vh; min-height: 360px; }
+    .lb-prev { left: 8px; }
+    .lb-next { right: 8px; }
+    .lightbox-nav { top: auto; bottom: 16px; transform: none; }
+    .lb-prev { bottom: 16px; left: calc(50% - 52px); }
+    .lb-next { bottom: 16px; right: calc(50% - 52px); }
+    .btn-ghost { margin-left: 0; margin-top: 12px; display: block; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Start</a>
+  <a href="index.html#about" onclick="closeMenu()">Über uns</a>
+  <a href="index.html#services" onclick="closeMenu()">Leistungen</a>
+  <a href="projekte.html" onclick="closeMenu()">Projekte</a>
+  <a href="index.html#contact" onclick="closeMenu()">Kontakt</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose">&#x2715;</button>
+  <div class="lightbox-img-wrap" style="position:relative;">
+    <button class="lightbox-nav lb-prev" id="lbPrev">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <img id="lbImg" src="" alt="">
+    <button class="lightbox-nav lb-next" id="lbNext">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lightbox-caption" id="lbCaption"></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo.jpg" alt="Hakolli Gartenbau">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Start</a></li>
+    <li><a href="index.html#about">Über uns</a></li>
+    <li><a href="index.html#services">Leistungen</a></li>
+    <li><a href="projekte.html" class="active">Projekte</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Projekt anfragen</a></li>
+  </ul>
+  <div class="nav-burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="breadcrumb"><a href="index.html">Hakolli Gartenbau</a> &nbsp;/&nbsp; Projekte</div>
+    <h1 class="hero-title">Unsere <em>Referenzprojekte</em></h1>
+    <p class="hero-subtitle">Jedes Projekt erzählt eine Geschichte — von der Idee zur vollendeten Außenanlage.</p>
+  </div>
+</div>
+<div class="green-strip"></div>
+
+<!-- FILTER -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active" data-filter="all">
+      Alle Projekte <span class="filter-count" id="count-all">32</span>
+    </button>
+    <button class="filter-btn" data-filter="pool">
+      Pool &amp; Wellness <span class="filter-count">13</span>
+    </button>
+    <button class="filter-btn" data-filter="pflaster">
+      Pflasterarbeiten <span class="filter-count">9</span>
+    </button>
+    <button class="filter-btn" data-filter="naturstein">
+      Naturstein &amp; Treppen <span class="filter-count">5</span>
+    </button>
+    <button class="filter-btn" data-filter="garten">
+      Garten &amp; Rasen <span class="filter-count">3</span>
+    </button>
+    <button class="filter-btn" data-filter="terrasse">
+      Terrassen <span class="filter-count">2</span>
+    </button>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="gallery-inner">
+    <div class="count-bar">
+      <span id="visibleCount">32</span> Projekte werden angezeigt
+    </div>
+    <!-- Pool Duo: Gartenbeleuchtung & Gartenanlage nebeneinander -->
+    <div class="masonry-duo">
+      <div class="masonry-item" data-cat="pool" data-title="Poolanlage mit Gartenbeleuchtung · Privatgarten">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4798.jpeg" alt="Poolanlage mit Gartenbeleuchtung Bühl" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Poolanlage mit Gartenbeleuchtung</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="masonry-item" data-cat="pool" data-title="Schwimmbad und Gartenanlage · Tagansicht">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4699.jpeg" alt="Schwimmbad und Gartenanlage Tagansicht" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Schwimmbad und Gartenanlage</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+    </div>
+
+    <div class="masonry" id="masonry">
+
+      <!-- POOL & WELLNESS -->
+
+      <div class="masonry-item" data-cat="pool" data-title="Pool mit Holzdeck · Privatgarten">
+        <img src="pool.jpeg" alt="Pool mit Holzdeck" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Schwimmbad mit Holzterrasse</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Pool mit Gartenhaus · Außenanlage">
+        <img src="45.jpeg" alt="Pool mit Gartenhaus" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Poolanlage mit Gartenhaus &amp; Terrasse</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Vorher &amp; Nachher · Poolbau">
+        <img src="poolvorhernacher.jpeg" alt="Pool Vorher Nachher" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Komplette Gartenanlage mit Pool</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Pool &amp; Gartengestaltung · Privatgarten">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4611.jpeg" alt="Pool mit Gartenanlage" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Poolanlage mit Rasen &amp; Gartenhaus</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Pool mit Sommerhaus · Idyllischer Garten">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4699.jpeg" alt="Pool mit Sommerhaus" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Schwimmbad &amp; Gartenanlage</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Designpool von oben · Naturstein &amp; Rasen">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.476666.jpeg" alt="Pool Draufsicht" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Designpool mit Natursteinplatten</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Naturpool · Organische Form">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4612.jpeg" alt="Naturpool" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Naturpool mit Schieferumrandung</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pool" data-title="Schwimmbad im Bau · Villa">
+        <img src="WhatsApp%20Image%202026-05-15%20at%20223.jpeg" alt="Poolbau Villa" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Poolbau bei Einfamilienhaus</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+
+      <div class="masonry-item" data-cat="pool" data-title="Premium Pool · Außenanlage fertig">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4755.jpeg" alt="Premium Pool" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pool &amp; Wellness</div>
+          <div class="overlay-title">Exklusive Poolanlage mit Terrassendecking</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <!-- PFLASTERARBEITEN -->
+      <div class="masonry-item" data-cat="pflaster" data-title="Kopfsteinpflaster · Einfahrt historisch">
+        <img src="2.jpeg" alt="Kopfsteinpflaster Einfahrt" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Historisches Kopfsteinpflaster · Einfahrt</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Granit Pflaster · Vorplatz Villengarten">
+        <img src="1.jpeg" alt="Granit Pflaster" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Granit-Kopfsteinpflaster · Vorplatz</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Pflastereinfahrt · Antik Rotbraun">
+        <img src="pflaster.jpeg" alt="Pflastereinfahrt" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Antik-Pflaster · Einfahrt Einfamilienhaus</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Pflaster &amp; Treppe · Gewerbeanlage">
+        <img src="66.jpeg" alt="Pflaster mit Treppe" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Pflasteranlage mit Granit-Treppenstufen</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Granitpflaster mit Stufensystem">
+        <img src="9.jpeg" alt="Granitpflaster Stufen" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Granitpflaster mit Stufenelement</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Einfahrt &amp; Natursteinmauer · Premium">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4613.jpeg" alt="Einfahrt mit Mauer" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Einfahrt mit Pflaster &amp; Natursteinmauer</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Anthrazit Pflaster &amp; Gabione · Modern">
+        <img src="WhatsAp.jpeg" alt="Modernes Pflaster anthrazit" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Modernes Anthrazit-Pflaster &amp; Gabionen</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Pflaster &amp; Gartengestaltung · Wohnhaus">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.462.jpeg" alt="Pflaster und Garten" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Pflasterfläche mit Rollrasen &amp; Bepflanzung</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="pflaster" data-title="Gabione als Sichtschutz · Hauseingang">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.46.jpeg" alt="Gabione Sichtschutz" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Pflasterarbeiten</div>
+          <div class="overlay-title">Gabionen-Sichtschutz &amp; Außengestaltung</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <!-- NATURSTEIN & TREPPEN -->
+      <div class="masonry-item" data-cat="naturstein" data-title="Sandstein Treppenanlage · Elegantes Wohnhaus">
+        <img src="WhatsApp%20Image%202026-05-15%20at%20.jpeg" alt="Sandstein Treppe" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Naturstein &amp; Treppen</div>
+          <div class="overlay-title">Elegante Sandstein-Treppenanlage</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="naturstein" data-title="Granit Treppe · Neubau Eingang">
+        <img src="treppe.jpeg" alt="Granit Eingangstreppe" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Naturstein &amp; Treppen</div>
+          <div class="overlay-title">Granit-Eingangstreppe Neubau</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="naturstein" data-title="Schwarzgranit Treppe &amp; Kies · Weinberg">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.464.jpeg" alt="Schwarze Granit Treppe" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Naturstein &amp; Treppen</div>
+          <div class="overlay-title">Schwarzgranit-Treppe mit Kiesbereich</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="naturstein" data-title="Natursteinmauer · Hangsicherung">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4666.jpeg" alt="Natursteinmauer" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Naturstein &amp; Treppen</div>
+          <div class="overlay-title">Natursteinmauer als Hangsicherung</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="naturstein" data-title="Sichtschutzwand &amp; Gabionen · Gewerblich">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4724.jpeg" alt="Sichtschutzwand" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Naturstein &amp; Treppen</div>
+          <div class="overlay-title">Sichtschutzanlage Gewerbe</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <!-- GARTEN & RASEN -->
+
+      <div class="masonry-item" data-cat="garten" data-title="Gartenanlage &amp; Pool · Gesamtgestaltung">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.46666.jpeg" alt="Gartenanlage mit Pool" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Garten &amp; Rasen</div>
+          <div class="overlay-title">Gartenanlage mit Pool &amp; Sommerhaus</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="garten" data-title="Teamarbeit · Erdarbeiten &amp; Vorbereitung">
+        <img src="98.jpeg" alt="Team Erdarbeiten" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Garten &amp; Rasen</div>
+          <div class="overlay-title">Geländemodellierung &amp; Hangbefestigung</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <!-- TERRASSEN -->
+      <div class="masonry-item" data-cat="terrasse" data-title="Holzterrasse · Vorher &amp; Nachher">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.463.jpeg" alt="Holzterrasse Vorher Nachher" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Terrassen</div>
+          <div class="overlay-title">Holzterrasse komplett neu</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+      <div class="masonry-item" data-cat="terrasse" data-title="Premium Terrassenpool · Infinity Look">
+        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.476666.jpeg" alt="Terrassenpool" loading="lazy">
+        <div class="masonry-overlay">
+          <div class="overlay-cat">Terrassen</div>
+          <div class="overlay-title">Pool-Terrasse mit WPC-Dielen</div>
+        </div>
+        <div class="overlay-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+
+    </div><!-- /masonry -->
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <span class="tag">Ihr nächstes Projekt</span>
+  <h2>Bereit für Ihren <em>Traumgarten?</em></h2>
+  <p>Wir planen und realisieren Ihr Projekt — individuell, präzise und in höchster Qualität. Vereinbaren Sie jetzt ein kostenloses Erstgespräch.</p>
+  <a href="index.html#contact" class="btn-primary">Projekt anfragen</a>
+  <a href="index.html" class="btn-ghost">Zurück zur Startseite</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <a href="index.html" class="footer-logo"><img src="logo.jpg" alt="Hakolli Gartenbau"></a>
+    <p>&copy; 2025 Hakolli Gartenbau. Alle Rechte vorbehalten.</p>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Filter */
+  const btns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.masonry-item');
+  const countEl = document.getElementById('visibleCount');
+  const duoWrapper = document.querySelector('.masonry-duo');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      let visible = 0;
+      items.forEach(item => {
+        const match = f === 'all' || item.dataset.cat === f;
+        item.dataset.hidden = match ? 'false' : 'true';
+        if (match) visible++;
+      });
+      if (duoWrapper) {
+        const anyDuoVisible = [...duoWrapper.querySelectorAll('.masonry-item')]
+          .some(i => i.dataset.hidden !== 'true');
+        duoWrapper.style.display = anyDuoVisible ? '' : 'none';
+      }
+      countEl.textContent = visible;
+    });
+  });
+
+  /* Lightbox */
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCaption = document.getElementById('lbCaption');
+  let currentItems = [];
+  let currentIdx = 0;
+
+  function getVisibleItems() {
+    return [...items].filter(i => i.dataset.hidden !== 'true');
+  }
+
+  items.forEach((item, idx) => {
+    item.addEventListener('click', () => {
+      currentItems = getVisibleItems();
+      currentIdx = currentItems.indexOf(item);
+      openLb(currentItems[currentIdx]);
+    });
+  });
+
+  function openLb(item) {
+    const img = item.querySelector('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCaption.textContent = item.dataset.title || '';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
+
+  document.getElementById('lbPrev').addEventListener('click', e => {
+    e.stopPropagation();
+    currentItems = getVisibleItems();
+    currentIdx = (currentIdx - 1 + currentItems.length) % currentItems.length;
+    openLb(currentItems[currentIdx]);
+  });
+  document.getElementById('lbNext').addEventListener('click', e => {
+    e.stopPropagation();
+    currentItems = getVisibleItems();
+    currentIdx = (currentIdx + 1) % currentItems.length;
+    openLb(currentItems[currentIdx]);
+  });
+
+  function closeLb() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
+    if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
+  });
+
+  /* Mobile menu */
+  const mobileMenu = document.getElementById('mobileMenu');
+  let menuOpen = false;
+  function toggleMenu() {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+  }
+  function closeMenu() {
+    menuOpen = false; mobileMenu.classList.remove('open'); document.body.style.overflow = '';
+  }
+</script>
+</body>
+</html>

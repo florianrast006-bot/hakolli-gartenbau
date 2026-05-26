@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://hakolli.de/datenschutz.html">
+<title>Datenschutzerklärung – Hakolli Gartenbau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green: #3a8c1a; --green-dark: #2a6612; --green-light: #4fa822;
+    --black: #071c03; --anthrazit: #0d2d07; --off-white: #f2f9ee;
+    --white: #ffffff; --text-body: #1e3a14; --text-muted: #4a6a3a;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'DM Sans', sans-serif;
+    --nav-h: 80px;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-body); background: var(--white); -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-thumb { background: var(--green); border-radius: 2px; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: var(--nav-h); display: flex; align-items: center;
+    justify-content: space-between; padding: 0 5vw;
+    background: rgba(13,45,7,0.97); backdrop-filter: blur(12px);
+  }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { height: 44px; background: white; padding: 4px 8px; border-radius: 4px; }
+  .nav-back {
+    font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.6); text-decoration: none;
+    display: flex; align-items: center; gap: 8px; transition: color 0.2s;
+  }
+  .nav-back:hover { color: var(--green-light); }
+  .nav-back svg { width: 16px; height: 16px; }
+
+  .page-hero {
+    background: var(--anthrazit); padding: calc(var(--nav-h) + 60px) 5vw 60px;
+  }
+  .page-hero .tag {
+    font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--green-light); display: block; margin-bottom: 14px;
+  }
+  .page-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 300; color: white; line-height: 1.2;
+  }
+  .green-strip { height: 4px; background: linear-gradient(90deg, var(--green-dark), var(--green-light), var(--green-dark)); }
+
+  .content {
+    max-width: 800px; margin: 0 auto;
+    padding: 72px 5vw 100px;
+  }
+  .content h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem; font-weight: 400;
+    color: var(--black); margin-bottom: 16px; margin-top: 48px;
+    padding-bottom: 12px; border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .content h2:first-child { margin-top: 0; }
+  .content h3 {
+    font-size: 1rem; font-weight: 500; color: var(--text-body);
+    margin-top: 28px; margin-bottom: 10px;
+  }
+  .content p {
+    font-size: 0.95rem; font-weight: 300; line-height: 1.85;
+    color: var(--text-muted); margin-bottom: 14px;
+  }
+  .content ul {
+    list-style: none; margin-bottom: 14px;
+  }
+  .content ul li {
+    font-size: 0.95rem; font-weight: 300; line-height: 1.85;
+    color: var(--text-muted); padding-left: 20px; position: relative; margin-bottom: 6px;
+  }
+  .content ul li::before {
+    content: '–'; position: absolute; left: 0; color: var(--green);
+  }
+  .content a { color: var(--green); text-decoration: none; }
+  .content a:hover { text-decoration: underline; }
+  .content strong { font-weight: 500; color: var(--text-body); }
+  .info-block {
+    background: var(--off-white); border-left: 3px solid var(--green);
+    padding: 20px 24px; border-radius: 0 2px 2px 0; margin-bottom: 14px;
+  }
+  .info-block p { margin-bottom: 4px; }
+  .info-block p:last-child { margin-bottom: 0; }
+
+  footer { background: var(--black); padding: 32px 5vw; }
+  .footer-bottom {
+    max-width: 800px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+  }
+  .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.2); }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.2); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.5); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo.jpg" alt="Hakolli Gartenbau">
+  </a>
+  <a href="index.html" class="nav-back">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    Zurück zur Startseite
+  </a>
+</nav>
+
+<div class="page-hero">
+  <span class="tag">Rechtliches</span>
+  <h1>Datenschutzerklärung</h1>
+</div>
+<div class="green-strip"></div>
+
+<div class="content">
+
+  <h2>1. Datenschutz auf einen Blick</h2>
+  <h3>Allgemeine Hinweise</h3>
+  <p>
+    Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+  </p>
+
+  <h3>Datenerfassung auf dieser Website</h3>
+  <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+  <p>
+    Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+  </p>
+  <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
+  <p>
+    Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
+  </p>
+  <p><strong>Wofür nutzen wir Ihre Daten?</strong></p>
+  <p>
+    Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens oder zur Kontaktaufnahme verwendet werden.
+  </p>
+  <p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong></p>
+  <p>
+    Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+  </p>
+  <p>
+    Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+  </p>
+
+  <h2>2. Hosting</h2>
+  <p>
+    Diese Website wird bei <strong>Netlify, Inc.</strong> gehostet (2325 3rd Street, Suite 215, San Francisco, CA 94107, USA). Details entnehmen Sie der Datenschutzerklärung von Netlify: <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">https://www.netlify.com/privacy/</a>
+  </p>
+  <p>
+    Der Einsatz von Netlify erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website.
+  </p>
+
+  <h2>3. Verantwortliche Stelle</h2>
+  <div class="info-block">
+    <p><strong>Hakolli Gartenbau</strong></p>
+    <p>Hasan Hakolli</p>
+    <p>Robert-Bosch-Str. 2B</p>
+    <p>77815 Bühl, Deutschland</p>
+    <p>Telefon: <a href="tel:+4972238010187">+49 7223 8010187</a></p>
+    <p>E-Mail: <a href="mailto:info@hakolli.de">info@hakolli.de</a></p>
+  </div>
+  <p>
+    Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
+  </p>
+
+  <h2>4. Ihre Rechte</h2>
+  <h3>Auskunft, Löschung und Berichtigung</h3>
+  <p>
+    Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+  </p>
+  <h3>Recht auf Einschränkung der Verarbeitung</h3>
+  <p>
+    Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden.
+  </p>
+  <h3>Widerspruchsrecht</h3>
+  <p>
+    Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen.
+  </p>
+  <h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+  <p>
+    Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+  </p>
+  <p>
+    Zuständige Aufsichtsbehörde für Baden-Württemberg:<br>
+    <strong>Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong><br>
+    Postfach 10 29 32, 70025 Stuttgart<br>
+    <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a>
+  </p>
+
+  <h2>5. Datenerfassung auf dieser Website</h2>
+  <h3>Kontaktformular</h3>
+  <p>
+    Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+  </p>
+  <p>
+    Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde.
+  </p>
+  <p>
+    Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
+  </p>
+  <h3>Anfrage per E-Mail oder Telefon</h3>
+  <p>
+    Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+  </p>
+  <p>
+    Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO).
+  </p>
+  <p>
+    Die von Ihnen übermittelten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt. Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+  </p>
+
+  <h2>6. Google Fonts</h2>
+  <p>
+    Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Google Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in Ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.
+  </p>
+  <p>
+    Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse diese Website aufgerufen wurde. Die Nutzung von Google Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der einheitlichen Darstellung des Schriftbildes auf unserer Website.
+  </p>
+  <p>
+    Wenn Ihr Browser Google Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt. Weitere Informationen zu Google Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener">developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+  </p>
+
+  <h2>7. Speicherdauer</h2>
+  <p>
+    Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben.
+  </p>
+
+  <p style="margin-top: 48px; font-size: 0.82rem; color: rgba(0,0,0,0.35);">Stand: Mai 2025</p>
+
+</div>
+
+<footer>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Hakolli Gartenbau. Alle Rechte vorbehalten.</p>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
