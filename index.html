@@ -1512,18 +1512,43 @@
   });
 
   /* ── Form ── */
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('.btn-form');
-    btn.textContent = 'Backend wird verbunden';
-    btn.style.background = 'var(--green-dark)';
+    const form = e.target;
+    const btn = form.querySelector('.btn-form');
+    const data = Object.fromEntries(new FormData(form));
+
+    btn.textContent = 'Wird gesendet…';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = 'Anfrage senden <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
-      btn.style.background = '';
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        btn.textContent = 'Anfrage gesendet ✓';
+        btn.style.background = 'var(--green-dark)';
+        form.reset();
+        setTimeout(() => {
+          btn.innerHTML = 'Anfrage senden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      } else {
+        throw new Error('Fehler');
+      }
+    } catch {
+      btn.textContent = 'Fehler – bitte erneut versuchen';
+      btn.style.background = '#c0392b';
       btn.disabled = false;
-      e.target.reset();
-    }, 3000);
+      setTimeout(() => {
+        btn.innerHTML = 'Anfrage senden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+        btn.style.background = '';
+      }, 4000);
+    }
   }
 
 </script>
