@@ -27,6 +27,16 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+console.log('SMTP settings:', {
+  host: smtpConfig.host,
+  port: smtpConfig.port,
+  secure: smtpConfig.secure,
+  userConfigured: Boolean(smtpConfig.user),
+  passConfigured: Boolean(smtpConfig.pass),
+  from: smtpConfig.from,
+  to: smtpConfig.to,
+});
+
 function escapeHtml(value = '') {
   return String(value)
     .replace(/&/g, '&amp;')
@@ -68,8 +78,17 @@ app.post('/api/contact', async (req, res) => {
 
     res.json({ success: true });
   } catch (err) {
-    console.error('Mail error:', err);
-    res.status(500).json({ error: 'E-Mail konnte nicht gesendet werden.' });
+    console.error('Mail error:', {
+      code: err.code,
+      command: err.command,
+      response: err.response,
+      responseCode: err.responseCode,
+      message: err.message,
+    });
+    res.status(500).json({
+      error: 'E-Mail konnte nicht gesendet werden.',
+      code: err.code || err.responseCode || 'SMTP_ERROR',
+    });
   }
 });
 

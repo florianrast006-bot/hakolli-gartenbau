@@ -1539,9 +1539,12 @@
           btn.disabled = false;
         }, 3000);
       } else {
-        throw new Error('Fehler');
+        const errorData = await res.json().catch(() => ({}));
+        console.error('Kontaktformular Fehler:', errorData);
+        throw new Error(errorData.code || 'Fehler');
       }
-    } catch {
+    } catch (err) {
+      console.error('Kontaktformular konnte nicht gesendet werden:', err);
       btn.textContent = 'Fehler – bitte erneut versuchen';
       btn.style.background = '#c0392b';
       btn.disabled = false;
