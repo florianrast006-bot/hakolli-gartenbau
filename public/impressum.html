@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://hakolli.de/impressum.html">
-<link rel="icon" href="/logo.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#3a8c1a">
 <title>Impressum – Hakolli Gartenbau</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -32,7 +34,7 @@
     background: rgba(13,45,7,0.97); backdrop-filter: blur(12px);
   }
   .nav-logo { display: flex; align-items: center; text-decoration: none; }
-  .nav-logo img { height: 44px; background: white; padding: 4px 8px; border-radius: 4px; }
+  .nav-logo img { height: 44px; width: auto; background: white; padding: 4px 8px; border-radius: 4px; }
   .nav-back {
     font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
     color: rgba(255,255,255,0.6); text-decoration: none;
@@ -95,7 +97,7 @@
 
 <nav>
   <a href="index.html" class="nav-logo">
-    <img src="logo.jpg" alt="Hakolli Gartenbau">
+    <img src="logo.jpg" alt="Hakolli Gartenbau" width="136" height="100">
   </a>
   <a href="index.html" class="nav-back">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
@@ -174,7 +176,7 @@
 
 <footer>
   <div class="footer-bottom">
-    <p>&copy; 2025 Hakolli Gartenbau. Alle Rechte vorbehalten.</p>
+    <p>&copy; <span class="js-year">2025</span> Hakolli Gartenbau. Alle Rechte vorbehalten.</p>
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
@@ -182,5 +184,6 @@
   </div>
 </footer>
 
+<script>document.querySelectorAll('.js-year').forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 </body>
 </html>

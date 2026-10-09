@@ -1,0 +1,126 @@
+{
+  "pool-abendbeleuchtung-buehl": {
+    "width": 1600,
+    "height": 738
+  },
+  "pool-gartenanlage-tagansicht": {
+    "width": 1600,
+    "height": 900
+  },
+  "terrasse-sandstein-natursteinplatten": {
+    "width": 1200,
+    "height": 1600
+  },
+  "terrasse-polygonalplatten-rot": {
+    "width": 1600,
+    "height": 1200
+  },
+  "terrasse-polygonalplatten-detail": {
+    "width": 1600,
+    "height": 1200
+  },
+  "terrasse-natursteinstuetzmauer": {
+    "width": 1600,
+    "height": 1200
+  },
+  "granitpflaster-vorplatz": {
+    "width": 1600,
+    "height": 900
+  },
+  "kopfsteinpflaster-einfahrt": {
+    "width": 1200,
+    "height": 1600
+  },
+  "granitpflaster-stufen": {
+    "width": 1600,
+    "height": 1200
+  },
+  "pool-gartenhaus": {
+    "width": 1200,
+    "height": 1600
+  },
+  "pflastereinfahrt-wohnanlage": {
+    "width": 1600,
+    "height": 1200
+  },
+  "team-erdarbeiten": {
+    "width": 1600,
+    "height": 1200
+  },
+  "granit-eingangstreppe-neubau": {
+    "width": 1200,
+    "height": 1600
+  },
+  "pool-holzdeck": {
+    "width": 1600,
+    "height": 1200
+  },
+  "pool-vorher-nachher": {
+    "width": 1600,
+    "height": 1600
+  },
+  "pflastereinfahrt": {
+    "width": 1600,
+    "height": 900
+  },
+  "pflaster-anthrazit-modern": {
+    "width": 1600,
+    "height": 1200
+  },
+  "sandsteintreppe": {
+    "width": 1200,
+    "height": 1600
+  },
+  "poolbau-villa": {
+    "width": 1600,
+    "height": 1200
+  },
+  "gabione-sichtschutz": {
+    "width": 1600,
+    "height": 1200
+  },
+  "pool-mit-gartenanlage": {
+    "width": 1600,
+    "height": 1200
+  },
+  "naturpool": {
+    "width": 1600,
+    "height": 1200
+  },
+  "einfahrt-mit-mauer": {
+    "width": 1600,
+    "height": 1200
+  },
+  "pflaster-und-garten": {
+    "width": 1200,
+    "height": 1600
+  },
+  "holzterrasse-vorher-nachher": {
+    "width": 1600,
+    "height": 1600
+  },
+  "granittreppe-schwarz": {
+    "width": 1600,
+    "height": 1200
+  },
+  "natursteinmauer": {
+    "width": 1600,
+    "height": 1200
+  },
+  "gartenanlage-mit-pool": {
+    "width": 1600,
+    "height": 1200
+  },
+  "sichtschutzwand": {
+    "width": 1600,
+    "height": 1200
+  },
+  "premium-pool": {
+    "width": 1024,
+    "height": 768
+  },
+  "pool-draufsicht": {
+    "width": 640,
+    "height": 1136
+  }
+}

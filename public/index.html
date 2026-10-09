@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hakolli Gartenbau Bühl – Exklusive Garten- und Landschaftsgestaltung seit über 20 Jahren. Pools, Terrassen, Pflasterarbeiten, Naturstein & Zaunbau in höchster Qualität. Jetzt anfragen!">
+<meta name="description" content="Hakolli Gartenbau Bühl: Garten- & Landschaftsbau seit über 20 Jahren – Pools, Terrassen, Pflaster, Naturstein & Zaunbau. Jetzt unverbindlich anfragen!">
 <meta name="keywords" content="Gartenbau Bühl, Landschaftsbau Baden-Baden, Pool bauen, Terrasse Naturstein, Pflasterarbeiten, Zaunbau, Außenanlagen Rastatt, Hakolli">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://hakolli.de/">
@@ -13,16 +13,27 @@
 <meta property="og:title" content="Hakolli Gartenbau Bühl | Terrassen · Pools · Landschaftsbau">
 <meta property="og:description" content="Exklusive Garten- und Landschaftsgestaltung in Bühl: Pools, Terrassen, Pflasterarbeiten, Naturstein und Zaunbau.">
 <meta property="og:url" content="https://hakolli.de/">
-<meta property="og:image" content="https://hakolli.de/logo.jpg">
+<meta property="og:image" content="https://hakolli.de/img/og-hakolli.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Poolanlage mit Gartenbeleuchtung von Hakolli Gartenbau">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/logo.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#3a8c1a">
 <title>Hakolli Gartenbau Bühl | Terrassen · Pools · Landschaftsbau</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://hakolli.de/#business",
   "name": "Hakolli Gartenbau",
   "description": "Exklusive Garten- und Landschaftsgestaltung in Bühl und Umgebung – Pools, Terrassen, Pflasterarbeiten, Naturstein, Zaunbau.",
+  "url": "https://hakolli.de/",
+  "logo": "https://hakolli.de/icon-512.png",
+  "image": "https://hakolli.de/img/og-hakolli.jpg",
   "telephone": "+49-7223-8010187",
   "email": "info@hakolli.de",
   "address": {
@@ -34,16 +45,17 @@
     "addressCountry": "DE"
   },
   "areaServed": ["Bühl", "Baden-Baden", "Rastatt", "Karlsruhe"],
-  "openingHours": ["Mo-Fr 07:00-18:00", "Sa 08:00-14:00"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+  ],
   "priceRange": "€€€"
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Exo+2:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  picture { display: contents; }
 
   :root {
     --green:       #3a8c1a;
@@ -526,6 +538,10 @@
   /* Form */
   .contact-form { display: flex; flex-direction: column; gap: 16px; }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .hp-field { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  .form-consent { font-size: 0.8rem; line-height: 1.5; color: rgba(255,255,255,0.6); margin: 4px 0 18px; }
+  .form-consent a { color: var(--green-light); }
+  .form-status { font-size: 0.85rem; margin-top: 12px; min-height: 1.2em; color: #ffb4a8; }
   .form-group { display: flex; flex-direction: column; gap: 8px; }
   .form-group label {
     font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
@@ -859,7 +875,7 @@
   <div class="sp-leaf" style="left:74%;bottom:-5%;animation-duration:17s;animation-delay:3s;">🌿</div>
   <div class="sp-leaf" style="left:89%;bottom:-5%;animation-duration:15s;animation-delay:5s;font-size:16px;">🍃</div>
   <div class="sp-logo-wrap">
-    <img id="spLogoImg" src="logo.jpg" alt="Gartenbau Hakolli">
+    <img id="spLogoImg" src="logo.jpg" alt="Gartenbau Hakolli" width="136" height="100" fetchpriority="high">
   </div>
   <div class="sp-text-block">
     <div class="sp-brand">Gartenbau <span>HAKOLLI</span></div>
@@ -869,8 +885,8 @@
 
 <!-- ─── LIGHTBOX ─── -->
 <div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose">&#x2715;</button>
-  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Bild schließen">&#x2715;</button>
+  <img id="lightboxImg" alt="Projektbild in Großansicht">
 </div>
 
 <!-- ─── MOBILE MENU ─── -->
@@ -885,7 +901,7 @@
 <!-- ─── NAV ─── -->
 <nav id="navbar">
   <a href="#" class="nav-logo">
-    <img src="logo.jpg" alt="Hakolli Gartenbau Logo">
+    <img src="logo.jpg" alt="Hakolli Gartenbau Logo" width="136" height="100">
   </a>
   <ul class="nav-links">
     <li><a href="#about">Über uns</a></li>
@@ -894,7 +910,7 @@
     <li><a href="#testimonials">Bewertungen</a></li>
     <li><a href="#contact" class="nav-cta">Projekt anfragen</a></li>
   </ul>
-  <div class="nav-burger" id="burger" onclick="toggleMenu()">
+  <div class="nav-burger" id="burger" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Menü öffnen">
     <span></span><span></span><span></span>
   </div>
 </nav>
@@ -957,7 +973,7 @@
         </div>
       </div>
       <div class="about-image reveal reveal-delay-2">
-        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4798.jpeg" alt="Pool mit Abendbeleuchtung">
+        <picture><source type="image/webp" srcset="img/pool-abendbeleuchtung-buehl-800.webp 800w, img/pool-abendbeleuchtung-buehl-1200.webp 1200w, img/pool-abendbeleuchtung-buehl.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/pool-abendbeleuchtung-buehl.jpg" alt="Pool mit Abendbeleuchtung" width="1600" height="738" loading="lazy" decoding="async" data-full="img/pool-abendbeleuchtung-buehl.webp"></picture>
         <div class="about-badge">
           <span class="num">5★</span>
           <span class="txt">Bewertung</span>
@@ -1064,44 +1080,44 @@
       <a href="#contact" class="projects-link">Ihr Projekt anfragen &#8594;</a>
     </div>
     <div class="gallery">
-      <div class="gallery-item g1 reveal" onclick="openLightbox('WhatsApp%20Image%202026-05-15%20at%2022.05.4798.jpeg')">
-        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4798.jpeg" alt="Poolanlage Nachtbeleuchtung Bühl">
+      <div class="gallery-item g1 reveal" onclick="openLightbox('img/pool-abendbeleuchtung-buehl.webp')">
+        <picture><source type="image/webp" srcset="img/pool-abendbeleuchtung-buehl-800.webp 800w, img/pool-abendbeleuchtung-buehl-1200.webp 1200w, img/pool-abendbeleuchtung-buehl.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/pool-abendbeleuchtung-buehl.jpg" alt="Poolanlage Nachtbeleuchtung Bühl" width="1600" height="738" loading="lazy" decoding="async" data-full="img/pool-abendbeleuchtung-buehl.webp"></picture>
         <div class="overlay"><span class="overlay-label">Pool · Nacht</span></div>
       </div>
-      <div class="gallery-item g2 reveal reveal-delay-1" onclick="openLightbox('WhatsApp%20Image%202026-05-15%20at%2022.05.4699.jpeg')">
-        <img src="WhatsApp%20Image%202026-05-15%20at%2022.05.4699.jpeg" alt="Poolanlage mit Gartenanlage Tagansicht">
+      <div class="gallery-item g2 reveal reveal-delay-1" onclick="openLightbox('img/pool-gartenanlage-tagansicht.webp')">
+        <picture><source type="image/webp" srcset="img/pool-gartenanlage-tagansicht-800.webp 800w, img/pool-gartenanlage-tagansicht-1200.webp 1200w, img/pool-gartenanlage-tagansicht.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/pool-gartenanlage-tagansicht.jpg" alt="Poolanlage mit Gartenanlage Tagansicht" width="1600" height="900" loading="lazy" decoding="async" data-full="img/pool-gartenanlage-tagansicht.webp"></picture>
         <div class="overlay"><span class="overlay-label">Pool · Tag</span></div>
       </div>
-      <div class="gallery-item g3 reveal" onclick="openLightbox('WhatsApp%20Image%202026-05-18%20at%2015.11.27%20(2).jpeg')">
-        <img src="WhatsApp%20Image%202026-05-18%20at%2015.11.27%20(2).jpeg" alt="Sandstein Terrasse Natursteinplatten">
+      <div class="gallery-item g3 reveal" onclick="openLightbox('img/terrasse-sandstein-natursteinplatten.webp')">
+        <picture><source type="image/webp" srcset="img/terrasse-sandstein-natursteinplatten-800.webp 800w, img/terrasse-sandstein-natursteinplatten-1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/terrasse-sandstein-natursteinplatten.jpg" alt="Sandstein Terrasse Natursteinplatten" width="1200" height="1600" loading="lazy" decoding="async" data-full="img/terrasse-sandstein-natursteinplatten.webp"></picture>
         <div class="overlay"><span class="overlay-label">Terrasse · Sandstein</span></div>
       </div>
-      <div class="gallery-item g4 reveal reveal-delay-1" onclick="openLightbox('WhatsApp%20Image%202026-05-18%20at%2015.11.27%20(3).jpeg')">
-        <img src="WhatsApp%20Image%202026-05-18%20at%2015.11.27%20(3).jpeg" alt="Rote Naturstein Terrasse Polygonalplatten">
+      <div class="gallery-item g4 reveal reveal-delay-1" onclick="openLightbox('img/terrasse-polygonalplatten-rot.webp')">
+        <picture><source type="image/webp" srcset="img/terrasse-polygonalplatten-rot-800.webp 800w, img/terrasse-polygonalplatten-rot-1200.webp 1200w, img/terrasse-polygonalplatten-rot.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/terrasse-polygonalplatten-rot.jpg" alt="Rote Naturstein Terrasse Polygonalplatten" width="1600" height="1200" loading="lazy" decoding="async" data-full="img/terrasse-polygonalplatten-rot.webp"></picture>
         <div class="overlay"><span class="overlay-label">Terrasse · Polygonal-Naturstein</span></div>
       </div>
-      <div class="gallery-item g5 reveal reveal-delay-2" onclick="openLightbox('WhatsApp%20Image%202026-05-18%20at%2015.11.28.jpeg')">
-        <img src="WhatsApp%20Image%202026-05-18%20at%2015.11.28.jpeg" alt="Rote Polygonalplatten Terrasse Nahaufnahme">
+      <div class="gallery-item g5 reveal reveal-delay-2" onclick="openLightbox('img/terrasse-polygonalplatten-detail.webp')">
+        <picture><source type="image/webp" srcset="img/terrasse-polygonalplatten-detail-800.webp 800w, img/terrasse-polygonalplatten-detail-1200.webp 1200w, img/terrasse-polygonalplatten-detail.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/terrasse-polygonalplatten-detail.jpg" alt="Rote Polygonalplatten Terrasse Nahaufnahme" width="1600" height="1200" loading="lazy" decoding="async" data-full="img/terrasse-polygonalplatten-detail.webp"></picture>
         <div class="overlay"><span class="overlay-label">Terrasse · Detailansicht</span></div>
       </div>
-      <div class="gallery-item g6 reveal" onclick="openLightbox('1.jpeg')">
-        <img src="1.jpeg" alt="Granit Pflasterarbeiten Einfahrt">
+      <div class="gallery-item g6 reveal" onclick="openLightbox('img/granitpflaster-vorplatz.webp')">
+        <picture><source type="image/webp" srcset="img/granitpflaster-vorplatz-800.webp 800w, img/granitpflaster-vorplatz-1200.webp 1200w, img/granitpflaster-vorplatz.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/granitpflaster-vorplatz.jpg" alt="Granit Pflasterarbeiten Einfahrt" width="1600" height="900" loading="lazy" decoding="async" data-full="img/granitpflaster-vorplatz.webp"></picture>
         <div class="overlay"><span class="overlay-label">Granit-Pflaster · Vorplatz</span></div>
       </div>
-      <div class="gallery-item g7 reveal reveal-delay-1" onclick="openLightbox('treppe.jpeg')">
-        <img src="treppe.jpeg" alt="Granit Eingangstreppe Neubau">
+      <div class="gallery-item g7 reveal reveal-delay-1" onclick="openLightbox('img/granit-eingangstreppe-neubau.webp')">
+        <picture><source type="image/webp" srcset="img/granit-eingangstreppe-neubau-800.webp 800w, img/granit-eingangstreppe-neubau-1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/granit-eingangstreppe-neubau.jpg" alt="Granit Eingangstreppe Neubau" width="1200" height="1600" loading="lazy" decoding="async" data-full="img/granit-eingangstreppe-neubau.webp"></picture>
         <div class="overlay"><span class="overlay-label">Granit-Eingangstreppe · Neubau</span></div>
       </div>
-      <div class="gallery-item g8 reveal reveal-delay-2" onclick="openLightbox('WhatsApp%20Image%202026-05-18%20at%2015.11.29%20(2).jpeg')">
-        <img src="WhatsApp%20Image%202026-05-18%20at%2015.11.29%20(2).jpeg" alt="Terrasse mit Naturstein Stützmauer">
+      <div class="gallery-item g8 reveal reveal-delay-2" onclick="openLightbox('img/terrasse-natursteinstuetzmauer.webp')">
+        <picture><source type="image/webp" srcset="img/terrasse-natursteinstuetzmauer-800.webp 800w, img/terrasse-natursteinstuetzmauer-1200.webp 1200w, img/terrasse-natursteinstuetzmauer.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/terrasse-natursteinstuetzmauer.jpg" alt="Terrasse mit Naturstein Stützmauer" width="1600" height="1200" loading="lazy" decoding="async" data-full="img/terrasse-natursteinstuetzmauer.webp"></picture>
         <div class="overlay"><span class="overlay-label">Terrasse mit Stützmauer</span></div>
       </div>
-      <div class="gallery-item g9 reveal" onclick="openLightbox('2.jpeg')">
-        <img src="2.jpeg" alt="Kopfsteinpflaster Einfahrt">
+      <div class="gallery-item g9 reveal" onclick="openLightbox('img/kopfsteinpflaster-einfahrt.webp')">
+        <picture><source type="image/webp" srcset="img/kopfsteinpflaster-einfahrt-800.webp 800w, img/kopfsteinpflaster-einfahrt-1200.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/kopfsteinpflaster-einfahrt.jpg" alt="Kopfsteinpflaster Einfahrt" width="1200" height="1600" loading="lazy" decoding="async" data-full="img/kopfsteinpflaster-einfahrt.webp"></picture>
         <div class="overlay"><span class="overlay-label">Kopfsteinpflaster · Einfahrt</span></div>
       </div>
-      <div class="gallery-item g10 reveal reveal-delay-1" onclick="openLightbox('66.jpeg')">
-        <img src="66.jpeg" alt="Pflastereinfahrt Wohnanlage">
+      <div class="gallery-item g10 reveal reveal-delay-1" onclick="openLightbox('img/pflastereinfahrt-wohnanlage.webp')">
+        <picture><source type="image/webp" srcset="img/pflastereinfahrt-wohnanlage-800.webp 800w, img/pflastereinfahrt-wohnanlage-1200.webp 1200w, img/pflastereinfahrt-wohnanlage.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/pflastereinfahrt-wohnanlage.jpg" alt="Pflastereinfahrt Wohnanlage" width="1600" height="1200" loading="lazy" decoding="async" data-full="img/pflastereinfahrt-wohnanlage.webp"></picture>
         <div class="overlay"><span class="overlay-label">Pflastereinfahrt · Wohnanlage</span></div>
       </div>
     </div>
@@ -1235,16 +1251,16 @@
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name *</label>
-              <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required>
+              <input type="text" id="name" name="name" maxlength="100" placeholder="Ihr vollständiger Name" required>
             </div>
             <div class="form-group">
               <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" placeholder="Ihre Nummer">
+              <input type="tel" id="phone" name="phone" maxlength="50" placeholder="Ihre Nummer">
             </div>
           </div>
           <div class="form-group">
             <label for="email">E-Mail *</label>
-            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+            <input type="email" id="email" name="email" maxlength="200" placeholder="ihre@email.de" required>
           </div>
           <div class="form-group">
             <label for="service">Gewünschte Leistung</label>
@@ -1262,14 +1278,21 @@
           </div>
           <div class="form-group">
             <label for="message">Ihr Projekt</label>
-            <textarea id="message" name="message" placeholder="Beschreiben Sie Ihr Projekt, Ihre Wünsche und die ungefähre Grundstücksgröße…"></textarea>
+            <textarea id="message" name="message" maxlength="5000" placeholder="Beschreiben Sie Ihr Projekt, Ihre Wünsche und die ungefähre Grundstücksgröße…"></textarea>
           </div>
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website (bitte leer lassen)</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="_ts" id="formTs">
+          <p class="form-consent">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben gemäß unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
           <button type="submit" class="btn-form">
             Anfrage senden
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
             </svg>
           </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
@@ -1281,7 +1304,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="logo.jpg" alt="Hakolli Gartenbau">
+        <img src="logo.jpg" alt="Hakolli Gartenbau" width="136" height="100" loading="lazy" decoding="async">
         <p>Exklusive Garten- und Landschaftsgestaltung in höchster Qualität. Ihr Partner für anspruchsvolle Außenanlagen in Bühl, Baden-Baden, Rastatt und Umgebung.</p>
         <div class="footer-social">
           <a href="#" class="social-btn" aria-label="Instagram">
@@ -1336,7 +1359,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Hakolli Gartenbau. Alle Rechte vorbehalten.</p>
+      <p>&copy; <span class="js-year">2025</span> Hakolli Gartenbau. Alle Rechte vorbehalten.</p>
       <div class="footer-bottom-links">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
@@ -1497,7 +1520,9 @@
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   function openLightbox(src) {
+    const thumb = document.querySelector('.gallery-item img[data-full="' + src + '"]');
     lightboxImg.src = src;
+    if (thumb) lightboxImg.alt = thumb.alt;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -1513,12 +1538,15 @@
   });
 
   /* ── Form ── */
+  document.getElementById('formTs').value = Date.now();
   async function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
     const btn = form.querySelector('.btn-form');
     const data = Object.fromEntries(new FormData(form));
 
+    const status = document.getElementById('formStatus');
+    status.textContent = '';
     btn.textContent = 'Wird gesendet…';
     btn.disabled = true;
 
@@ -1533,6 +1561,7 @@
         btn.textContent = 'Anfrage gesendet ✓';
         btn.style.background = 'var(--green-dark)';
         form.reset();
+        document.getElementById('formTs').value = Date.now();
         setTimeout(() => {
           btn.innerHTML = 'Anfrage senden <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
           btn.style.background = '';
@@ -1540,8 +1569,8 @@
         }, 3000);
       } else {
         const errorData = await res.json().catch(() => ({}));
-        console.error('Kontaktformular Fehler:', errorData);
-        throw new Error(errorData.code || 'Fehler');
+        if (errorData.error) status.textContent = errorData.error;
+        throw new Error('HTTP ' + res.status);
       }
     } catch (err) {
       console.error('Kontaktformular konnte nicht gesendet werden:', err);
@@ -1556,5 +1585,6 @@
   }
 
 </script>
+<script>document.querySelectorAll('.js-year').forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 </body>
 </html>
